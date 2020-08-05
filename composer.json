@@ -1,12 +1,20 @@
 {
     "name": "mbonaldo/comingsoon",
     "description": "Handle Coming Soon page",
-    "authors": [
+    "keywords": ["laravel", "comingsoon"],
+    "license": "MIT",    
+	"authors": [
         {
             "name": "Mauro Bonaldo",
             "email": "mbonaldo@gmail.com"
         }
     ],
+	"require": {
+        "php": ">=7.0"
+			   }	
     "minimum-stability": "dev",
-    "require": {}
+    "prefer-stable": true,
+    "require-dev": {
+        "laravel/framework": "5.5.x"
+    }
 }
