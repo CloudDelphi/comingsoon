@@ -12,6 +12,11 @@
 	"require": {
 				"php": ">=7.0"
 			   },	
+    "autoload": {
+        "psr-4": {
+            "MBonaldo\\Console\\": ""
+        }
+    },		   
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require-dev": {
