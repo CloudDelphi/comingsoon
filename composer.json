@@ -1,0 +1,12 @@
+{
+    "name": "mbonaldo/comingsoon",
+    "description": "Handle Coming Soon page",
+    "authors": [
+        {
+            "name": "Mauro Bonaldo",
+            "email": "mbonaldo@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
