@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Foundation\Console;
+namespace MBonaldo\Console;
 
 use Exception;
 use Illuminate\Console\Command;
