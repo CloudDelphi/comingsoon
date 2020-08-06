@@ -1,19 +1,18 @@
 <?php
 
-namespace MBonaldo\Console;
+namespace MBonaldo\ComingSoon\Commands;
 
 use Exception;
 use Illuminate\Console\Command;
 
-class ComingsoonOffCommand extends Command
+class ComingsoonOff extends Command
 {
 	
     /**
-     * The console command name.
-     *
+     * The name and signature of the console command.
      * @var string
      */
-    protected $name = 'ComingsoonOff';
+    protected $signature = 'comingsoon:off';
 
     /**
      * The console command description.

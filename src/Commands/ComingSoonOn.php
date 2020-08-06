@@ -1,28 +1,22 @@
 <?php
 
-namespace MBonaldo\Console;
+namespace MBonaldo\ComingSoon\Commands;
+
 
 use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Support\InteractsWithTime;
 
-class ComingsoonOnCommand extends Command
+class ComingsoonOn extends Command
 {
     use InteractsWithTime;
 
-	/**
-     * The console command name.
-     *
-     * @var string
-     */
-    protected $name = 'ComingsoonOn';
-	
     /**
      * The console command signature.
      *
      * @var string
      */
-    protected $signature = 'ComingsoonOn 	{--message= : The message for the coming soon mode}
+    protected $signature = 'comingsoon:on 	{--message= : The message for the coming soon mode}
 											{--retry= : The number of seconds after which the request may be retried}
 											{--allow=* : IP or networks allowed to access the application while in coming soon mode}';
 

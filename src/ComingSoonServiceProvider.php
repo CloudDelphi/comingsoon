@@ -7,6 +7,17 @@ use Illuminate\Support\ServiceProvider;
 class ComingSoonServiceProvider extends ServiceProvider
 {
     /**
+     * The console commands.
+     *
+     * @var bool
+     */
+    protected $commands = [
+        'MBonaldo\ComingSoon\Commands\ComingSoonOff',
+        'MBonaldo\ComingSoon\Commands\ComingSoonOn',
+    ];
+	
+	
+    /**
      * Perform post-registration booting of services.
      *
      * @return void
