@@ -14,7 +14,7 @@
 			   },	
     "autoload": {
         "psr-4": {
-            "MBonaldo\\": "src/"
+            "mbonaldo\\": "src/"
         }
     },		   
     "minimum-stability": "dev",
