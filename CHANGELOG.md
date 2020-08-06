@@ -1,2 +1,8 @@
-# 0.0.1 (05-Aug-20)
-The project started
+# Changelog
+
+All notable changes to `ComingSoon` will be documented in this file.
+
+## Version 1.0
+
+### Added
+- Everything
