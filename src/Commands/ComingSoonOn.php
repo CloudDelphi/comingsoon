@@ -7,7 +7,7 @@ use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Support\InteractsWithTime;
 
-class ComingsoonOn extends Command
+class ComingSoonOn extends Command
 {
     use InteractsWithTime;
 
