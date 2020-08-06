@@ -1,6 +1,6 @@
 <?php
 
-namespace MBonaldo\Console\Comingsoon;
+namespace MBonaldo\Console;
 
 use Exception;
 use Illuminate\Console\Command;
@@ -10,6 +10,13 @@ class ComingsoonOnCommand extends Command
 {
     use InteractsWithTime;
 
+	/**
+     * The console command name.
+     *
+     * @var string
+     */
+    protected $name = 'ComingsoonOn';
+	
     /**
      * The console command signature.
      *

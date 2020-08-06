@@ -1,12 +1,13 @@
 <?php
 
-namespace MBonaldo\Console\Comingsoon;
+namespace MBonaldo\Console;
 
 use Exception;
 use Illuminate\Console\Command;
 
 class ComingsoonOffCommand extends Command
 {
+	
     /**
      * The console command name.
      *
