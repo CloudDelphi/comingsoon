@@ -2,6 +2,7 @@
 
 namespace MBonaldo\ComingSoon;
 
+use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Support\ServiceProvider;
 
 class ComingSoonServiceProvider extends ServiceProvider
@@ -30,9 +31,12 @@ class ComingSoonServiceProvider extends ServiceProvider
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
         // Publishing is only necessary when using the CLI.
-        if ($this->app->runningInConsole()) {
-            $this->bootForConsole();
-        }
+        //if ($this->app->runningInConsole()) {
+        //    $this->bootForConsole();
+        //}
+        $this->publishes([
+            __DIR__.'/../config/comingsoon.php' => config_path('comingsoon.php'),
+        ]);
     }
 
     /**
@@ -44,6 +48,8 @@ class ComingSoonServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(__DIR__.'/../config/comingsoon.php', 'comingsoon');
 
+		$this->commands($this->commands);
+		
         // Register the service the package provides.
         $this->app->singleton('comingsoon', function ($app) {
             return new ComingSoon;

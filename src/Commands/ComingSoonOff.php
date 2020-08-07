@@ -5,7 +5,7 @@ namespace MBonaldo\ComingSoon\Commands;
 use Exception;
 use Illuminate\Console\Command;
 
-class ComingsSoonOff extends Command
+class ComingSoonOff extends Command
 {
 	
     /**

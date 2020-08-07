@@ -33,7 +33,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "MBonaldo\\ComingSoon\\ComingSoonServiceProvider"
+                "MBonaldo\\ComingSoon\\ComingSoonServiceProvider"		
             ],
             "aliases": {
                 "ComingSoon": "MBonaldo\\ComingSoon\\Facades\\ComingSoon"

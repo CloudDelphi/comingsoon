@@ -2,7 +2,6 @@
 
 namespace MBonaldo\ComingSoon\Commands;
 
-
 use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Support\InteractsWithTime;
