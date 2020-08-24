@@ -28,12 +28,19 @@ class ComingSoonServiceProvider extends ServiceProvider
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'mbonaldo');
         // $this->loadViewsFrom(__DIR__.'/../resources/views', 'mbonaldo');
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        $this->loadRoutesFrom(__DIR__.'/Routes/web.php');
+        // $this->loadRoutesFrom(__DIR__.'/Routes/web.php');
 
         // Publishing is only necessary when using the CLI.
         //if ($this->app->runningInConsole()) {
         //    $this->bootForConsole();
         //}
+		
+	   $this->app['router']->namespace('MBonaldo\\ComingSoon\\Controllers')
+			->middleware(['web'])
+			->group(function () {
+				$this->loadRoutesFrom(__DIR__ . '/routes/web.php');
+			});
+
         $this->publishes([
             __DIR__.'/../config/comingsoon.php' => config_path('comingsoon.php'),
         ]);
