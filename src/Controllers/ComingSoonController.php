@@ -2,15 +2,13 @@
 
 namespace MBonaldo\ComingSoon\Controllers;
 
-use Illuminate\Support\Facades\Facade;
-
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
 class ComingSoonController extends Controller
 {
-  public function index()
-  {
+	
+  public function index() {
     $subscribeUrl = config('comingsoon.subscribe_url');
     $tokens = config('comingsoon.tokens');
     $isSubscribeNeeded = !is_null($subscribeUrl);
@@ -18,8 +16,7 @@ class ComingSoonController extends Controller
     return view('comingsoon::coming-soon', compact('subscribeUrl', 'tokens', 'isSubscribeNeeded', 'hasTokens'));
   }
 
-  public function token(Request $request)
-  {
+  public function token(Request $request) {
     $tokens = config('comingsoon.tokens');
     if ($request->has('token') && in_array($request->get('token'), $tokens)) {
       $request->session()->put('comingsoon-token', $request->get('token'));
@@ -28,4 +25,5 @@ class ComingSoonController extends Controller
       return redirect()->route('comingsoon.index');
     }
   }
+
 }
